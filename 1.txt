@@ -1,6 +1,0 @@
-Array
-(
-    [admin_name] => admin
-    [admin_pass] => 123456
-    [verifyCode] => ctdk
-)
