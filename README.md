@@ -37,7 +37,7 @@
 	密码 123456
 ```
 ### 部分页面展示(点击查看大图)
-![后台](https://raw.githubusercontent.com/duiying/livecms/master/readmeimg/admin.png)
-![前台](https://raw.githubusercontent.com/duiying/livecms/master/readmeimg/index.png)
-![前台](https://raw.githubusercontent.com/duiying/livecms/master/readmeimg/case.png)
-![前台](https://raw.githubusercontent.com/duiying/livecms/master/readmeimg/about.png)
+![后台](https://raw.githubusercontent.com/duiying/img/master/cms-admin.png)
+![前台](https://raw.githubusercontent.com/duiying/img/master/cms-index.png)
+![前台](https://raw.githubusercontent.com/duiying/img/master/cms-case.png)
+![前台](https://raw.githubusercontent.com/duiying/img/master/cms-about.png)
