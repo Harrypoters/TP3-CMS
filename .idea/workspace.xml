@@ -2,78 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2f5fdbe-4283-460a-ab86-99ae98f0a52c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/ArticleController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ArticleController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/AuthController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/AuthController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/BannerController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/BannerController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/CaseController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/CaseController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/CommonController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/CommonController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/ConfigController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ConfigController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/CronController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/CronController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/HomeController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/HomeController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/JobController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/JobController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/LinkController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/LinkController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/LoginController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/LoginController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ManagerController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/MsgController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/MsgController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/NavController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/NavController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/RoleController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/RoleController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Controller/RuntimeController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Controller/RuntimeController.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Model/CommonModel.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Model/CommonModel.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Model/IndexModel.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Model/IndexModel.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/Model/UploadImageModel.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/Model/UploadImageModel.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Article/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/View/Article/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Article/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/View/Article/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Banner/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/View/Banner/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Banner/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/View/Banner/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Case/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/View/Case/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Case/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/View/Case/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/View/Home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Home/msg.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/View/Home/msg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/View/HomeCommon/common.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/View/HomeCommon/common.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/View/Index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Admin/View/Login/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Admin/View/Login/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Common/Common/function.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Common/Common/function.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Common/Conf/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Common/Conf/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Common/Conf/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Common/Conf/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/Common/common.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/View/Common/common.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Home/View/Index/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Home/View/Index/news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/job.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/live.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/msg.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/art-10.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/art-11.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/art-18.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/art-19.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/art-20.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/art-5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/art-7.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/news/art-8.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/kindeditor-v4.1.7.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/layer-v3.0.1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/layer-v3.0.1/demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/layer-v3.0.1/layer/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/layer-v3.0.1/layer/mobile/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/layer-v3.0.1/layer/mobile/need/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/layer-v3.0.1/layer/skin/default/icon-ext.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/layer-v3.0.1/layer/skin/default/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/layer-v3.0.1/layer/skin/default/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/layer-v3.0.1/layer/skin/default/loading-0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/layer-v3.0.1/layer/skin/default/loading-1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/layer-v3.0.1/layer/skin/default/loading-2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/layer-v3.0.1/文档/Layui社区.url" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/layer-v3.0.1/文档/jquery下载.url" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/layer-v3.0.1/文档/layer官网.url" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/layer-v3.0.1/文档/layer文档.url" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/layer-v3.0.1/更新日志.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/layer-v3.0.1/获得layim.url" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/thinkphp_3.2.3_full.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/uploadify.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/us.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +30,7 @@
           <entry key="jpg" value="27" />
           <entry key="js" value="4" />
           <entry key="json" value="1" />
-          <entry key="md" value="4" />
+          <entry key="md" value="6" />
           <entry key="php" value="67" />
           <entry key="png" value="47" />
           <entry key="sql" value="1" />
@@ -114,7 +44,7 @@
           <entry key="Image" value="75" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="4" />
-          <entry key="Markdown" value="4" />
+          <entry key="Markdown" value="6" />
           <entry key="PHP" value="67" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="SQL" value="1" />
@@ -124,14 +54,14 @@
         <counts>
           <entry key="dummy" value="6" />
           <entry key="html" value="477" />
-          <entry key="md" value="622" />
+          <entry key="md" value="651" />
           <entry key="php" value="3301" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="477" />
-          <entry key="Markdown" value="622" />
+          <entry key="Markdown" value="651" />
           <entry key="PHP" value="3301" />
           <entry key="PLAIN_TEXT" value="6" />
         </counts>
@@ -146,20 +76,11 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Common/Conf/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="41" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="874">
-                <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+              <first_editor relative-caret-position="345">
+                <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
               </first_editor>
               <second_editor />
             </state>
@@ -247,10 +168,10 @@
         <option value="$PROJECT_DIR$/Application/Admin/View/Home/index.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Login/index.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/HomeCommon/common.html" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Application/Home/View/Common/common.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Home/msg.html" />
         <option value="$PROJECT_DIR$/Application/Common/Conf/config.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -278,24 +199,6 @@
             <path>
               <item name="TP3-CMS" type="b2602c69:ProjectViewProjectNode" />
               <item name="TP3-CMS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TP3-CMS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP3-CMS" type="462c0819:PsiDirectoryNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TP3-CMS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP3-CMS" type="462c0819:PsiDirectoryNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TP3-CMS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP3-CMS" type="462c0819:PsiDirectoryNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="Conf" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -342,21 +245,21 @@
       <option name="presentableId" value="Default" />
       <updated>1553658457664</updated>
       <workItem from="1553658458873" duration="35199000" />
-      <workItem from="1553782982971" duration="16445000" />
+      <workItem from="1553782982971" duration="16842000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51644000" />
+    <option name="totallyTimeSpent" value="52041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2249467" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2249467" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.28121606" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.3767644" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
@@ -587,20 +490,20 @@
     <entry file="file://$PROJECT_DIR$/upload/2019/03/29/5c9d851c58b48.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="874">
-            <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Common/Conf/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" column="41" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="345">
+            <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

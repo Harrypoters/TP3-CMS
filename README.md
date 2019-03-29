@@ -13,12 +13,13 @@
 ```
 1. 克隆项目到本地
 2. 修改 Application/Common/Conf/config.php 文件中的数据库配置信息
-3. 访问后台 localhost/TP3-CMS/index.php/Admin/Login/index
+3. 导入项目根目录下的sql文件
+4. 访问后台 localhost/TP3-CMS/index.php/Admin/Login/index
     超级管理员: admin 123456
     编辑: biaji 123456
     游客: youke 123456
-4. 登录后台以后点击更新缓存, 生成前台静态页面
-5. 访问前台 localhost/TP3-CMS
+5. 登录后台以后点击更新缓存, 生成前台静态页面
+6. 访问前台 localhost/TP3-CMS
 ```
 
 ### 使用说明
