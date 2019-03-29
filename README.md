@@ -6,43 +6,38 @@
 
 
 基于ThinkPHP3.2框架完成的企业网站CMS系统, 快速搭建可商用的企业网站
-### 功能特性
-* 页面静态化
-* crontab定时任务实现数据库备份
-* RBAC权限控制
-* 各种常用功能模块的CURD
-* 大量使用Ajax提升用户体验
-* Layer弹层的封装
-* Uploadify异步上传图片
-* 百度UEditor编辑器的使用
-### 说明
-* 除了首页轮播模块采用了swiper插件, 其它所有部分均采用HTML+CSS+JS进行页面布局, 前端代码相当整洁
-* 后台涉及到整站的页面更新, 比如更新友情链接, 网站配置等操作, 需要进行手动更新缓存操作
-* 后台涉及到单个页面的更新, 比如新增文章,幻灯管理等操作, 无需进行手动更新缓存操作, 已经做了自动更新静态页面的操作
-### 如果前台页面没有加载样式, 请在后台手动更新缓存  
+### 项目概览
+![TP3-CMS](https://raw.githubusercontent.com/duiying/img/master/TP3-CMS.png)  
 
+### 安装
+```
+1. 克隆项目到本地
+2. 修改 Application/Common/Conf/config.php 文件中的数据库配置信息
+3. 访问后台 localhost/TP3-CMS/index.php/Admin/Login/index
+    超级管理员: admin 123456
+    编辑: biaji 123456
+    游客: youke 123456
+4. 登录后台以后点击更新缓存, 生成前台静态页面
+5. 访问前台 localhost/TP3-CMS
+```
+
+### 使用说明
+```
+1. 由于后台部分插件的兼容性, 为了正常地使用后台管理系统, 推荐使用 360极速浏览器(兼容模式)
+2. 前台基本使用HTML+CSS+JS进行手工页面布局, 除了首页的swiper轮播插件, 因此前台代码相当整洁
+3. 后台更新友情链接、网站配置等操作, 由于涉及到前台整站的更新, 需要在后台手动点击更新缓存
+4. 后台新增文章、幻灯管理等操作, 由于只涉及到前台单页面的更新, 无需在后台手动点击更新缓存, 已经做了自动更新静态页面
+``` 
 
 ### 如何进行数据库备份
+```shell
+# 执行crontab命令
+crontab -e
+# 每隔10分钟备份数据库(php命令所在的地址要用全路径)
+*/10 * * * * /usr/sbin/php /opt/lampp/htdocs/livecms/cron.php Admin Cron dump > /dev/null
 ```
-* 执行crontab命令
-	crontab -e
-* 每隔10分钟备份数据库(php命令所在的地址要用全路径)
-	*/10 * * * * /usr/sbin/php /opt/lampp/htdocs/livecms/cron.php Admin Cron dump > /dev/null
-```
-### 访问地址
-``` 
-前台访问  
-	localhost/livecms  
-后台访问  
-	localhost/livecms/index.php/Admin/Login/index  
-超级管理员  
-	账号 admin  
-	密码 123456  
-测试  
-	账号 ceshi  
-	密码 123456
-```
-### 部分页面展示(点击查看大图)
+
+### 效果图
 ![后台](https://raw.githubusercontent.com/duiying/img/master/cms-admin.png)
 ![前台](https://raw.githubusercontent.com/duiying/img/master/cms-index.png)
 ![前台](https://raw.githubusercontent.com/duiying/img/master/cms-case.png)
