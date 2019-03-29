@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
+    <img src="https://raw.githubusercontent.com/duiying/img/master/thinkphp.png" height="100px">
     <h1 align="center">TP3-CMS</h1>
     <br>
 </p>
