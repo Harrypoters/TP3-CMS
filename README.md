@@ -16,7 +16,7 @@
 3. 导入项目根目录下的sql文件
 4. 访问后台 localhost/TP3-CMS/index.php/Admin/Login/index
     超级管理员: admin 123456
-    编辑: biaji 123456
+    编辑: bianji 123456
     游客: youke 123456
 5. 登录后台以后点击更新缓存, 生成前台静态页面
 6. 访问前台 localhost/TP3-CMS
