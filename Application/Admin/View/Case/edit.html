@@ -24,7 +24,7 @@
                 <tr> 
                     <th  width="120">图片：</th>
                     <td>
-                        <input type="file" multiple="true" id="file_upload">
+                        <input type="file" multiple="true" id="file_upload"><span>请点击按钮允许Flash运行</span>
                         <img id="upload_img" src="__ROOT__/{$info['case_img']}" width="200">
                     </td>
                     <input id="upload_img_thumb" name="case_img" type="hidden" value="{$info['case_img']}" multiple="true" />
@@ -58,7 +58,7 @@
     $(function() {
         $("#file_upload").uploadify({
             'swf'               : "__PUBLIC__/js/uploadify/uploadify.swf",
-            'uploader'          : "__MODULE__/Article/uploadImage",
+            'uploader'          : "__MODULE__/Upload/uploadImage",
             'buttonText'        : '上传',
             'fileTypeDesc'      : 'Image Files',
             'fileTypeExts'      : '*.gif; *.jpg; *.png; *.jpeg',

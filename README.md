@@ -37,8 +37,7 @@ crontab -e
 */10 * * * * /usr/sbin/php /opt/lampp/htdocs/livecms/cron.php Admin Cron dump > /dev/null
 ```
 
-### 效果图
-![后台](https://raw.githubusercontent.com/duiying/img/master/cms-admin.png)
+### 后台展示
+![后台](https://raw.githubusercontent.com/duiying/img/master/cms-admin.jpg)
+### 前台展示
 ![前台](https://raw.githubusercontent.com/duiying/img/master/cms-index.png)
-![前台](https://raw.githubusercontent.com/duiying/img/master/cms-case.png)
-![前台](https://raw.githubusercontent.com/duiying/img/master/cms-about.png)

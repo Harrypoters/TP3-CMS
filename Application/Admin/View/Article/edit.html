@@ -1,8 +1,5 @@
 <extend name="Common:common" />
-<block name="cssjs">
-    <link rel="stylesheet" href="__PUBLIC__/js/uploadify/uploadify.css">
-    <script type="text/javascript" src="__PUBLIC__/js/uploadify/jquery.uploadify.min.js"></script>
-</block>
+<block name="cssjs"></block>
 <block name="body">
 <body>
     <!--面包屑导航 开始-->
@@ -34,22 +31,6 @@
                             <input type="text" name="art_editor" value="{$info['art_editor']}" required><span>必填</span>
                         </td>
                     </tr>
-                    <tr>
-                        <th>缩略图：</th>
-                        <td>
-                            <input type="file" multiple="true" id="file_upload">
-                            <if condition="$info['art_thumb'] neq ''">
-                                <img id="upload_img" src="__ROOT__/{$info['art_thumb']}" width="150">
-                            </if>
-                        </td>
-                        
-                        <input id="upload_img_thumb" name="art_thumb" type="hidden" value="{$info['art_thumb']}" multiple="true" />
-                    </tr>
-                    <style>
-                        .uploadify{display:inline-block;}
-                        .uploadify-button{border:none; border-radius:5px; margin-top:8px;}
-                        table.add_tab tr td span.uploadify-button-text{color: #FFF; margin:0;}
-                    </style>
                     <tr>
                         <th>内容：</th>
                         <td>
@@ -87,39 +68,10 @@
     </div>
 </body>
 <script type="text/javascript">
-    //uploadify异步上传图片
-    $(function() {
-        $("#file_upload").uploadify({
-            'swf'               : "__PUBLIC__/js/uploadify/uploadify.swf",
-            'uploader'          : "__URL__/uploadImage",
-            'buttonText'        : '上传',
-            'fileTypeDesc'      : 'Image Files',
-            'fileTypeExts'      : '*.gif; *.jpg; *.png; *.jpeg',
-            'fileObjName'       : 'file',
-            'width'             : 60,
-            'onUploadSuccess'   : function(file,data,response) {
-            if(response) {
-                var data = JSON.parse(data); //由JSON字符串转换为JSON对象
-                if(data.code == '201') {
-                    dialog.error(data.msg);
-                } else {
-                    $('#' + file.id).find('.data').html(' 上传完毕');
-                    $("#upload_img").attr("src","__ROOT__/"+data.file);
-                    $("#upload_img_thumb").attr('value',data.file);
-                    $("#upload_img").show();
-                }
-            }else{
-                dialog.error('上传失败!');
-            }
-        },
-        });
-    });
-    
     //提交数据
     function present() {
         dialog.presentForm("__URL__/editData", "__URL__/index");
         return false;
     }
-
 </script>
 </block>

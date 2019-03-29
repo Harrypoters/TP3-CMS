@@ -23,7 +23,7 @@
                 <tr> 
                     <th  width="120">图片：</th>
                     <td>
-                        <input type="file" multiple="true" id="file_upload">
+                        <input type="file" multiple="true" id="file_upload"><span>请点击按钮允许Flash运行</span>
                         <img style="display:none;" id="upload_img" src="" width="200">
                     </td>
                     <input id="upload_img_thumb" name="case_img" type="hidden" value="" multiple="true" />
@@ -53,11 +53,11 @@
     </div>
 </body>
 <script type="text/javascript">
-    //uploadify异步上传图片
+    // uploadify异步上传图片
     $(function() {
         $("#file_upload").uploadify({
             'swf'               : "__PUBLIC__/js/uploadify/uploadify.swf",
-            'uploader'          : "__MODULE__/Article/uploadImage",
+            'uploader'          : "__MODULE__/Upload/uploadImage",
             'buttonText'        : '上传',
             'fileTypeDesc'      : 'Image Files',
             'fileTypeExts'      : '*.gif; *.jpg; *.png; *.jpeg',
@@ -81,7 +81,7 @@
         });
     });
 
-    //数据提交
+    // 数据提交
     function present() {
         dialog.presentForm("__URL__/addData", "__URL__/index");
         return false;

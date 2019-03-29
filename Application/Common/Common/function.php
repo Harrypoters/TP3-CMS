@@ -9,7 +9,6 @@ function dataToArray($data) {
 	foreach($data as $k => $v) {
 		$dataToArray[$k] = $v;
 	}
-	file_put_contents('./1.txt', print_r($dataToArray, true));
 	return $data;
 }
 
@@ -25,7 +24,8 @@ function checkVerify($code, $id = '') {
  * 系统基本信息
  * @return array
  */
-function basicInfo() {
+function basicInfo()
+{
 	$basicInfo = array();
 	$basicInfo['system'] 	= PHP_OS;
 	$basicInfo['server'] 	= $_SERVER['SERVER_SOFTWARE'];
@@ -41,8 +41,15 @@ function basicInfo() {
  * @param string $pass 密码
  * @return string 加密后的密码
  */
-function encrypt($pass) {
-	return C('MD5_PREFIX').md5($pass);
+function encrypt($pass)
+{
+	return C('MD5_PREFIX') . md5($pass);
 }
 
-?>
+function msg($msg = '', $code = '')
+{
+    return [
+        'msg' => $msg,
+        'code' => $code
+    ];
+}

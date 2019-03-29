@@ -1,155 +1,171 @@
-<?php  
+<?php
+/**
+ * TP3-CMS
+ *
+ * PHP version 5
+ *
+ * @category  PHP
+ * @package   ThinkPHP3.2
+ * @author    wangyaxian <1822581649@qq.com>
+ * @link      https://github.com/duiying/TP3-CMS
+ */
+
 namespace Admin\Controller;
 use Think\Controller;
 
 /**
- * Banner模块
+ * 幻灯控制器
+ *
+ * PHP version 5
+ *
+ * @category  PHP
+ * @package   ThinkPHP3.2
+ * @author    wangyaxian <1822581649@qq.com>
+ * @link      https://github.com/duiying/TP3-CMS
  */
-
 class BannerController extends CommonController 
 {
+    /**
+     * 模型
+     */
+    CONST MODEL_NAME = 'Banner';
+
 	/**
 	 * 列表
 	 */
-	public function index() {
-		$list = D('Common')->infosOrder('Banner', array(), '*', 'banner_sort, banner_id');			
+	public function index()
+    {
+		$list = D(self::COMMON_MODEL)->infosOrder(self::MODEL_NAME, [], '*', 'banner_sort, banner_id');
 
 		$this->assign('list', $list);
 		$this->display();
 	}
 
 	/**
-	 * 添加-页面
+	 * 添加(页面)
 	 */
-	public function add() {
+	public function add()
+    {
 		$this->display();
 	}
 
 	/**
-	 * 添加-数据
+	 * 添加(数据)
 	 */
-	public function addData() {
+	public function addData()
+    {
 		$data = $_POST;
 
-		$res  = D('Common')->add('Banner', $data);
-		if($res) {
+		$res = D(self::COMMON_MODEL)->add(self::MODEL_NAME, $data);
+		if ($res) {
 			$this->html();
-			$this->ajaxReturn(array('msg'=>'添加成功!', 'code'=>'200'), 'json');
-		} else {
-			$this->ajaxReturn(array('msg'=>'添加失败!', 'code'=>'201'), 'json');
+            $this->ajaxReturn(msg(self::MSG_SUCCESS, self::CODE_SUCCESS), self::JSON_TYPE);
 		}
+        $this->ajaxReturn(msg(self::MSG_FAIL, self::CODE_FAIL), self::JSON_TYPE);
 	}
 
 	/**
-	 * 编辑-页面
+	 * 编辑(页面)
 	 */
-	public function edit() {
-		$banner_id 	= intval($_GET['banner_id']);
-		$info       = D('Common')->info('Banner', array('banner_id'=>$banner_id));
+	public function edit()
+    {
+		$banner_id = intval($_GET['banner_id']);
+		$info = D(self::COMMON_MODEL)->info(self::MODEL_NAME, ['banner_id' => $banner_id]);
 
 		$this->assign('info', $info);
 		$this->display();
 	}
 
 	/**
-	 * 编辑-数据
+	 * 编辑(数据)
 	 */
-	public function editData() {
+	public function editData()
+    {
 		$data = $_POST;
-		$where = array('banner_id'=>$data['banner_id']);
+		$where = ['banner_id' => $data['banner_id']];
 		unset($data['banner_id']);
 		
-		$res = D('Common')->edit('Banner', $where, $data);
-		if($res) {
+		$res = D(self::COMMON_MODEL)->edit(self::MODEL_NAME, $where, $data);
+		if ($res) {
 			$this->html();
-			$this->ajaxReturn(array('msg'=>'数据更新成功!', 'code'=>'200'), 'json');
-		} else {
-			$this->ajaxReturn(array('msg'=>'数据更新失败!', 'code'=>'201'), 'json');
+            $this->ajaxReturn(msg(self::MSG_SUCCESS, self::CODE_SUCCESS), self::JSON_TYPE);
 		}
+        $this->ajaxReturn(msg(self::MSG_FAIL, self::CODE_FAIL), self::JSON_TYPE);
 	}
 
 	/**
 	 * 删除
 	 */
-	public function del() {
+	public function del()
+    {
 		$banner_id = intval($_POST['data']);
 
-		$where 		= array('banner_id'=>$banner_id);
-		$res 		= D('Common')->del('Banner', $where);
+		$where = ['banner_id' => $banner_id];
+		$res = D(self::COMMON_MODEL)->del(self::MODEL_NAME, $where);
 
-		if($res) {
+		if ($res) {
 			$this->html();
-			$this->ajaxReturn(array('msg'=>'删除成功!', 'code'=>'200'), 'json');
-		} else {
-			$this->ajaxReturn(array('msg'=>'删除失败!', 'code'=>'201'), 'json');
+            $this->ajaxReturn(msg(self::MSG_SUCCESS, self::CODE_SUCCESS), self::JSON_TYPE);
 		}
+        $this->ajaxReturn(msg(self::MSG_FAIL, self::CODE_FAIL), self::JSON_TYPE);
 	}
 
 	/**
 	 * 批量删除
 	 */
-	public function dels() {
+	public function dels()
+    {
 		$banner_ids = $_POST['data'];
-		$where 		= array('banner_id'=>array('in', $banner_ids));
-		$res 		= D('Common')->del('Banner', $where);
+		$where = ['banner_id' => ['in', $banner_ids]];
+		$res = D(self::COMMON_MODEL)->del(self::MODEL_NAME, $where);
 
 		if($res) {
 			$this->html();
-			$this->ajaxReturn(array('msg'=>'删除成功!', 'code'=>'200'), 'json');
-		} else {
-			$this->ajaxReturn(array('msg'=>'删除失败!', 'code'=>'201'), 'json');
+            $this->ajaxReturn(msg(self::MSG_SUCCESS, self::CODE_SUCCESS), self::JSON_TYPE);
 		}
+        $this->ajaxReturn(msg(self::MSG_FAIL, self::CODE_FAIL), self::JSON_TYPE);
 	}
 
 	/**
 	 * 排序
 	 */
-	public function sort() {
-		$where 	= array('banner_id' 	=> $_POST['banner_id']);
-		$data 	= array('banner_sort' 	=> $_POST['banner_sort']);
+	public function sort()
+    {
+		$where 	= ['banner_id' => $_POST['banner_id']];
+		$data 	= ['banner_sort' => $_POST['banner_sort']];
 
-		$res = D('Common')->edit('Banner', $where, $data);
-		if($res) {
+		$res = D(self::COMMON_MODEL)->edit(self::MODEL_NAME, $where, $data);
+		if ($res) {
 			$this->html();
-			$this->ajaxReturn(array('msg'=>'排序更新成功!', 'code'=>'200'), 'json');
-		} else {
-			$this->ajaxReturn(array('msg'=>'排序更新失败!', 'code'=>'201'), 'json');
+            $this->ajaxReturn(msg(self::MSG_SUCCESS, self::CODE_SUCCESS), self::JSON_TYPE);
 		}
+        $this->ajaxReturn(msg(self::MSG_FAIL, self::CODE_FAIL), self::JSON_TYPE);
 	}
 
 	/**
 	 * 更改状态
 	 */
-	public function status() {
-		$where 	= array('banner_id' => $_POST['data']);
-		$status = D('Common')->getField('Banner', $where, 'banner_status');
-		
-		if($status == 0) {
-			$data = array('banner_status'=>1);
-			$msg  = '更新成功!';
-		} else {
-			$data = array('banner_status'=>0);
-			$msg  = '更新成功!';
-		}
+	public function status()
+    {
+		$where = ['banner_id' => $_POST['data']];
+		$status = D(self::COMMON_MODEL)->getField(self::MODEL_NAME, $where, 'banner_status');
 
-		$res = D('Common')->edit('Banner', $where, $data);
-		if($res) {
+		$data = $status == 0 ? ['banner_status' => 1] : ['banner_status' => 0];
+
+		$res = D(self::COMMON_MODEL)->edit(self::MODEL_NAME, $where, $data);
+		if ($res) {
 			$this->html();
-			$this->ajaxReturn(array('msg'=>$msg, 'code'=>'200'), 'json');
-		} else {
-			$this->ajaxReturn(array('msg'=>'操作失败!', 'code'=>'201'), 'json');
+            $this->ajaxReturn(msg(self::MSG_SUCCESS, self::CODE_SUCCESS), self::JSON_TYPE);
 		}
+        $this->ajaxReturn(msg(self::MSG_FAIL, self::CODE_FAIL), self::JSON_TYPE);
 	}
 
 	/**
-	 * 生成静态HTML
+	 * 生成静态HTML文件
 	 */
-	public function html() {
+	public function html()
+    {
 		$html = new \Admin\Controller\HomeController();
 		$html->indexHtml();
 	}
-
 }
-
-
-?>

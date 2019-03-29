@@ -1,19 +1,42 @@
-<?php 
+<?php
+/**
+ * TP3-CMS
+ *
+ * PHP version 5
+ *
+ * @category  PHP
+ * @package   ThinkPHP3.2
+ * @author    wangyaxian <1822581649@qq.com>
+ * @link      https://github.com/duiying/TP3-CMS
+ */
+
 namespace Admin\Controller;
 use Think\Controller;
 
 /**
- * 配置模块
+ * 配置控制器
+ *
+ * PHP version 5
+ *
+ * @category  PHP
+ * @package   ThinkPHP3.2
+ * @author    wangyaxian <1822581649@qq.com>
+ * @link      https://github.com/duiying/TP3-CMS
  */
-
 class ConfigController extends CommonController
 {
+    /**
+     * 模型
+     */
+    CONST MODEL_NAME = 'Config';
+
 	/**
 	 * 网站信息
 	 */
-	public function index() {
+	public function index()
+    {
 		$field = 'config_web_name, config_web_stat, config_web_copyright, config_web_record';
-		$info = D('Common')->info('Config', array(), $field);
+		$info = D(self::COMMON_MODEL)->info(self::MODEL_NAME, [], $field);
 
 		$this->assign('info', $info);
 		$this->display();
@@ -22,9 +45,10 @@ class ConfigController extends CommonController
 	/**
 	 * SEO设置
 	 */
-	public function seo() {
+	public function seo()
+    {
 		$field = 'config_seo_title, config_seo_keywords, config_seo_desc';
-		$info = D('Common')->info('Config', array(), $field);
+		$info = D(self::COMMON_MODEL)->info(self::MODEL_NAME, [], $field);
 
 		$this->assign('info', $info);
 		$this->display();
@@ -33,9 +57,10 @@ class ConfigController extends CommonController
 	/**
 	 * 企业信息
 	 */
-	public function firm() {
+	public function firm()
+    {
 		$field = 'config_firm_name, config_firm_location, config_firm_phone, config_firm_fax, config_firm_mail';
-		$info = D('Common')->info('Config', array(), $field);
+        $info = D(self::COMMON_MODEL)->info(self::MODEL_NAME, [], $field);
 
 		$this->assign('info', $info);
 		$this->display();
@@ -44,27 +69,25 @@ class ConfigController extends CommonController
 	/**
 	 * 客服设置
 	 */
-	public function service() {
+	public function service()
+    {
 		$field = 'config_service_phone, config_service_qq';
-		$info = D('Common')->info('Config', array(), $field);
+        $info = D(self::COMMON_MODEL)->info(self::MODEL_NAME, [], $field);
 
 		$this->assign('info', $info);
 		$this->display();
 	}
 
 	/**
-	 * 编辑-数据
+	 * 编辑(数据)
 	 */
-	public function editData() {
+	public function editData()
+    {
 		$data = $_POST;
-		$res = D('Common')->edit('Config', array(), $data);
+		$res = D(self::COMMON_MODEL)->edit(self::MODEL_NAME, [], $data);
 		if($res) {
-			$this->ajaxReturn(array('msg'=>'数据更新成功!', 'code'=>'200'), 'json');
-		} else {
-			$this->ajaxReturn(array('msg'=>'数据更新失败!', 'code'=>'201'), 'json');
+            $this->ajaxReturn(msg(self::MSG_SUCCESS, self::CODE_SUCCESS), self::JSON_TYPE);
 		}
+        $this->ajaxReturn(msg(self::MSG_FAIL, self::CODE_FAIL), self::JSON_TYPE);
 	}
 }
-
-
-?>

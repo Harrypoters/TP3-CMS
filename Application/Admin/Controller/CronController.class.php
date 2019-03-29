@@ -1,22 +1,41 @@
-<?php 
+<?php
+/**
+ * TP3-CMS
+ *
+ * PHP version 5
+ *
+ * @category  PHP
+ * @package   ThinkPHP3.2
+ * @author    wangyaxian <1822581649@qq.com>
+ * @link      https://github.com/duiying/TP3-CMS
+ */
+
 namespace Admin\Controller;
 use Think\Controller;
 
 /**
- * crontab定时任务模块
+ * 定时任务控制器
+ *
+ * PHP version 5
+ *
+ * @category  PHP
+ * @package   ThinkPHP3.2
+ * @author    wangyaxian <1822581649@qq.com>
+ * @link      https://github.com/duiying/TP3-CMS
  */
- 
 class CronController extends Controller
 {
-	//数据库备份(mysqldump命令所在的地址要用全路径)
-	public function dump() {
-		$shell = "/opt/lampp/bin/mysqldump -u ".C("DB_USER")." " .C("DB_NAME")." > /tmp/live_".time().".sql";
+    /**
+     * 数据库备份脚本
+     */
+	public function dump()
+	{
+		// mysqldump命令所在的地址要用全路径
+		$shell = "/opt/lampp/bin/mysqldump -u " . C("DB_USER") . " " . C("DB_NAME") . " > /tmp/live_" . time() . ".sql";
     	exec($shell);
 	}
-	
 }
 
-?>
 
 
 
